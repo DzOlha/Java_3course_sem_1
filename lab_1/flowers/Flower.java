@@ -1,5 +1,7 @@
 package lab_1.flowers;
 
+import java.util.Comparator;
+
 public class Flower {
     private int freshRate;//from 1 to 10
     private int height;//in meters up to 1
@@ -24,5 +26,11 @@ public class Flower {
         this.color = color;
         this.name = name;
         this.price = price;
+    }
+    public static class CompFreshRate implements Comparator<Flower> {
+        @Override
+        public int compare(Flower a, Flower b) {
+            return a.getFreshRate() - b.getFreshRate();
+        }
     }
 }
