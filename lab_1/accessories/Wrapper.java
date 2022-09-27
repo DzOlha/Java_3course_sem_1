@@ -12,9 +12,14 @@ public class Wrapper extends Accessory{
     public int getPriceForOneSquareMeter(){return priceForOneSquareMeter;}
 
     Wrapper(String color, int width, int height, int priceForOneSquareMeter){
-        super(priceForOneSquareMeter*width*height, color);
+        super(priceForOneSquareMeter*height*width, color);
         this.priceForOneSquareMeter = priceForOneSquareMeter;
         this.width = width;
         this.height = height;
+    }
+
+    @Override
+    public int getPrice() {
+        return priceForOneSquareMeter*height*width;
     }
 }
