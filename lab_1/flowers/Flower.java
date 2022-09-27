@@ -1,8 +1,8 @@
 package lab_1;
 
 public class Flower {
-    private int freshRate;
-    private int height;
+    private int freshRate;//from 1 to 10
+    private int height;//in meters up to 1
     private String color;
     private String name;
     private int price;
