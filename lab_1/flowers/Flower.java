@@ -1,4 +1,4 @@
-package lab_1;
+package lab_1.flowers;
 
 public class Flower {
     private int freshRate;//from 1 to 10
