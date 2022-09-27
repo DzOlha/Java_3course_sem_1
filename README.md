@@ -11,7 +11,7 @@ Create console application that meet the following requirements
 8. All code must be covered by tests. Use Junit 4 or 5, Mockito.
 
 ### Option 1: Flower Store. 
-1. Define color hierarchy. 
+1. Define flower hierarchy. 
 2. Create multiple flower objects. 
 3. Assemble a bouquet (using accessories) with the determination of its cost. 
 4. Sort the flowers in the bouquet based on the level of freshness. 
