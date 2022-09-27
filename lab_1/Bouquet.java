@@ -3,6 +3,8 @@ package lab_1;
 import lab_1.accessories.Accessory;
 import lab_1.flowers.Flower;
 
+import java.util.Arrays;
+
 public class Bouquet {
     private int cost;
     private Flower[] flowers;
@@ -16,6 +18,7 @@ public class Bouquet {
     public Accessory[] getAccessories() {return accessories;}
 
     public Bouquet(Flower[] flowers, Accessory[] accessories){
+        Arrays.sort(flowers, new Flower.CompFreshRate());
         this.flowers = flowers;
         this.accessories = accessories;
         this.cost = calcBouquetCost();
