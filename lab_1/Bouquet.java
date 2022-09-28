@@ -37,4 +37,23 @@ public class Bouquet {
         }
         return sum;
     }
+    public void printAllBouquetFlowers(){
+        int size = flowers.length;
+        for (int i = 0; i < size; i++) {
+            System.out.println(flowers[i]);
+        }
+    }
+    public void printAllBouquetAccessories(){
+        int size = accessories.length;
+        for (int i = 0; i < size; i++) {
+            System.out.println(accessories[i]);
+        }
+    }
+    public void printAllBouquet(){
+        printAllBouquetFlowers();
+        System.out.println("\n");
+        printAllBouquetAccessories();
+        System.out.println("\n");
+        System.out.println("COST = " + cost);
+    }
 }
