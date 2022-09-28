@@ -3,7 +3,10 @@ package lab_1;
 import lab_1.accessories.Accessory;
 import lab_1.flowers.Flower;
 
+import java.sql.Array;
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 
 public class Bouquet {
     private int cost;
@@ -55,5 +58,18 @@ public class Bouquet {
         printAllBouquetAccessories();
         System.out.println("\n");
         System.out.println("COST = " + cost);
+    }
+    public ArrayList<Flower> findFlowerByHeightRange(double a, double b){
+        ArrayList<Flower> flowersFromHeightRange = new ArrayList<>();
+        int size = flowers.length;
+        double tmpHeight = 0;
+        for (int i = 0; i < size; i++) {
+            tmpHeight = flowers[i].getHeight();
+            if(tmpHeight >= a && tmpHeight <= b){
+                System.out.println(flowers[i]);
+                flowersFromHeightRange.add(flowers[i]);
+            }
+        }
+        return flowersFromHeightRange;
     }
 }
