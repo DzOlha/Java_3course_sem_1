@@ -14,7 +14,7 @@ public class Main {
         Flower[] flowers = new Flower[11];
         flowers[0] = new Rose(5, 0.4, "red");
         flowers[1] = new Tulip(8, 0.25, "pink");
-        flowers[2] = new Rose(4, 0.5, "white");
+        flowers[2] = new Rose(4, 0.55, "white");
         flowers[3] = new Rose(10, 0.5, "white");
         flowers[4] = new Tulip(6, 0.3, "yellow");
         flowers[5] = new Chrysanthemum(9, 0.45, "white");
@@ -31,5 +31,6 @@ public class Main {
 
         Bouquet myB = new Bouquet(flowers, accessories);
         myB.printAllBouquet();
+        myB.findFlowerByHeightRange(0.3, 0.4);
     }
 }
