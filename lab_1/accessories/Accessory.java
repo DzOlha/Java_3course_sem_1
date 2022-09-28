@@ -1,16 +1,25 @@
 package lab_1.accessories;
 
 public class Accessory {
-    private int price;
+    private double price;
     private String color;
-    public void setPrice(int p){price = p;}
+    private String name;
+    public void setPrice(double p){price = p;}
     public void setColor(String c){color = c;}
-    public int getPrice(){return price;}
-    public String getColor(){return color;}
 
-    Accessory(int price, String color){
+    public void setName(String name) {this.name = name;}
+
+    public double getPrice(){return price;}
+    public String getColor(){return color;}
+    public String getName() {return name;}
+
+    public Accessory(String name, double price, String color){
+        this.name = name;
         this.price = price;
         this.color = color;
+    }
+    public String toString(){
+        return " Accessory name: " + name + "\n Color: " + color + "\n Price: " + price;
     }
 }
 
