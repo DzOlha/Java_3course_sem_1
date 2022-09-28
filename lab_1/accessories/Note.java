@@ -5,8 +5,8 @@ public class Note extends Accessory{
     public void setMessage(String mes){message = mes;}
     public String getMessage(){return message;}
 
-    Note(int price, String color, String message) {
-        super(price, color);
+    public Note(double price, String color, String message) {
+        super("note", price, color);
         this.message = message;
     }
 }

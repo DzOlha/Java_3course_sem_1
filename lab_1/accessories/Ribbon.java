@@ -1,11 +1,11 @@
 package lab_1.accessories;
 
 public class Ribbon extends Accessory{
-    private int length;
-    public void setLength(int len){length = len;}
-    public int getLength(){return length;}
-    Ribbon(int price, String color, int length){
-        super(price, color);
+    private double length;
+    public void setLength(double len){length = len;}
+    public double getLength(){return length;}
+    public Ribbon(double price, String color, double length){
+        super("ribbon", price, color);
         this.length = length;
     }
 }
