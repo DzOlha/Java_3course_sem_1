@@ -3,10 +3,8 @@ package lab_1;
 import lab_1.accessories.Accessory;
 import lab_1.flowers.Flower;
 
-import java.sql.Array;
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.List;
 
 public class Bouquet {
     private int cost;
